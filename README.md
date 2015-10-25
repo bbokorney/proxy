@@ -5,7 +5,7 @@ Currently it supports proxying TCP connections.
 
 ## Usage
 
-```golang
+```go
 // make the
 p := proxy.ProxiedTCPConn{
     // the TCP connection to proxy
@@ -27,7 +27,7 @@ err := p.Proxy()
 ```
 
 You may want to start the proxy in a new goroutine.
-```golang
+```go
 go func() {
     err := p.Proxy()
 }()
